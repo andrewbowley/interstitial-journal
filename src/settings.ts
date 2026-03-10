@@ -44,7 +44,7 @@ export class InterstitialJournalSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Time format")
-			.setDesc("Moment.js format for the timestamp (e.g. HH:mm for 24-hour, hh:mm A for 12-hour).")
+			.setDesc("Format for the timestamp (e.g. 'HH:mm' for 24-hour, 'hh:mm A' for 12-hour).")
 			.addText(text => text
 				.setPlaceholder("HH:mm")
 				.setValue(this.plugin.settings.timeFormat)
@@ -55,7 +55,7 @@ export class InterstitialJournalSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName("Date format")
-			.setDesc("Moment.js format for the date in new-page links (e.g. YYYY-MM-DD).")
+			.setDesc("Format for the date in new-page links (e.g. 'YYYY-MM-DD').")
 			.addText(text => text
 				.setPlaceholder("YYYY-MM-DD")
 				.setValue(this.plugin.settings.dateFormat)
