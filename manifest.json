@@ -1,7 +1,7 @@
 {
 	"id": "interstitial-journal",
 	"name": "Interstitial Journal",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
 	"description": "Create interstitial journal entries from the command palette.",
 	"author": "Andrew Bowley",
