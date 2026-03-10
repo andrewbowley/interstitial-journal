@@ -62,7 +62,7 @@ function insertEntry(
 export function registerCommands(plugin: InterstitialJournalPlugin): void {
 	plugin.addCommand({
 		id: "add-interstitial-entry",
-		name: "Add interstitial journal entry",
+		name: "Add entry",
 		editorCallback: (editor: Editor, _view: MarkdownView) => {
 			insertEntry(editor, plugin, false);
 		},
@@ -70,7 +70,7 @@ export function registerCommands(plugin: InterstitialJournalPlugin): void {
 
 	plugin.addCommand({
 		id: "add-interstitial-entry-with-page",
-		name: "Add interstitial journal entry with new page",
+		name: "Add entry with new page",
 		editorCallback: (editor: Editor, _view: MarkdownView) => {
 			insertEntry(editor, plugin, true);
 		},
