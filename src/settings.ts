@@ -46,7 +46,6 @@ export class InterstitialJournalSettingTab extends PluginSettingTab {
 			.setName("Time format")
 			.setDesc("Format for the timestamp.")
 			.addText(text => text
-				// eslint-disable-next-line obsidianmd/ui/sentence-case -- format token, not UI text
 				.setPlaceholder("HH:mm")
 				.setValue(this.plugin.settings.timeFormat)
 				.onChange(async (value) => {
@@ -58,7 +57,6 @@ export class InterstitialJournalSettingTab extends PluginSettingTab {
 			.setName("Date format")
 			.setDesc("Format for the date in new-page links.")
 			.addText(text => text
-				// eslint-disable-next-line obsidianmd/ui/sentence-case -- format token, not UI text
 				.setPlaceholder("YYYY-MM-DD")
 				.setValue(this.plugin.settings.dateFormat)
 				.onChange(async (value) => {
